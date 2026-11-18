@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maruf Hasan · Apps</title>
-<meta name="description" content="Apps by Maruf Hasan, including Deen – Namaz, Roza & Quran.">
+<meta name="description" content="Apps by Maruf Hasan: Deen – Namaz, Roza & Quran, and Meal & Expense Tracker.">
 <link rel="icon" href="deen-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
   header h1 { margin: 0; font-size: 2rem; line-height: 1.2; }
   header p { margin: 8px 0 0; color: var(--muted); max-width: 52ch; }
   h2 { margin: 0 0 14px; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .apps { display: flex; flex-direction: column; gap: 20px; }
   .app { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: grid; grid-template-columns: 96px 1fr; gap: 20px; }
   .app img { width: 96px; height: 96px; border-radius: 22px; }
   .app h3 { margin: 0; font-size: 1.3rem; line-height: 1.3; }
@@ -34,9 +35,10 @@
   .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .tags span { padding: 4px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-ink); font-size: .82rem; font-weight: 500; }
   .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-  .links a { padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: .92rem; text-decoration: none; }
+  .links a, .links .soon { padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: .92rem; text-decoration: none; }
   .links .primary { background: var(--accent); color: #fff; }
   .links .ghost { border: 1px solid var(--line); color: var(--fg); }
+  .links .soon { background: var(--accent-soft); color: var(--accent-ink); }
   .links a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 20px; }
   footer a { color: var(--accent-ink); }
@@ -47,25 +49,42 @@
 <main>
   <header>
     <h1>Maruf Hasan</h1>
-    <p>I make simple, private apps for everyday life. No accounts, and your data stays on your phone.</p>
+    <p>I make simple apps for everyday life: for your prayers, and for the meals and money you share.</p>
   </header>
 
   <section>
     <h2>Apps</h2>
-    <article class="app">
-      <img src="deen-icon.png" alt="Deen app icon">
-      <div>
-        <h3>Deen – Namaz, Roza &amp; Quran</h3>
-        <p class="bn">দ্বীন – নামাজ, রোজা ও কুরআন এক অ্যাপে</p>
-        <p>The Quran like your printed Mushaf with a khatam plan, prayer times and reminders, Sehri and Iftar countdown, a salah tracker, Qibla compass and a home screen widget. In English, Bangla, Hindi, Urdu, Arabic, Indonesian, Malay, Turkish and Chinese.</p>
-        <div class="tags"><span>Quran</span><span>Prayer times</span><span>Roza</span><span>Qibla</span><span>Salah tracker</span><span>Khatam</span></div>
-        <div class="links">
-          <a class="primary" href="https://play.google.com/store/apps/details?id=com.mdmarufhasanallhaddy.deennamazrozacalendar">Get it on Google Play</a>
-          <a class="primary" href="https://apps.apple.com/app/id6831520125">Download on the App Store</a>
-          <a class="ghost" href="/deen-privacy/privacy-policy">Privacy policy</a>
+    <div class="apps">
+      <article class="app">
+        <img src="deen-icon.png" alt="Deen app icon">
+        <div>
+          <h3>Deen – Namaz, Roza &amp; Quran</h3>
+          <p class="bn">দ্বীন – নামাজ, রোজা ও কুরআন এক অ্যাপে</p>
+          <p>The Quran like your printed Mushaf with a khatam plan, prayer times and reminders, Sehri and Iftar countdown, a salah tracker, Qibla compass and a home screen widget. No account needed, and your data stays on your phone. In English, Bangla, Hindi, Urdu, Arabic, Indonesian, Malay, Turkish and Chinese.</p>
+          <div class="tags"><span>Quran</span><span>Prayer times</span><span>Roza</span><span>Qibla</span><span>Salah tracker</span><span>Khatam</span></div>
+          <div class="links">
+            <a class="primary" href="https://play.google.com/store/apps/details?id=com.mdmarufhasanallhaddy.deennamazrozacalendar">Get it on Google Play</a>
+            <a class="primary" href="https://apps.apple.com/app/id6831520125">Download on the App Store</a>
+            <a class="ghost" href="/deen-privacy/privacy-policy">Privacy policy</a>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+
+      <article class="app">
+        <img src="meal-icon.png" alt="Meal &amp; Expense Tracker app icon">
+        <div>
+          <h3>Meal &amp; Expense Tracker</h3>
+          <p class="bn">মিল ও খরচের হিসাব – মেস</p>
+          <p>Keeps a shared mess fair and simple. Everyone sees the same meals, bazar, deposits and group fund, and at the end of the month the app works out exactly who pays and who receives. Your own money has a separate, private place in the same app. In English, Bangla and Spanish.</p>
+          <div class="tags"><span>Meal groups</span><span>Bazar</span><span>Deposits</span><span>Settlement</span><span>Personal budget</span></div>
+          <div class="links">
+            <span class="soon">Coming soon to Google Play and the App Store</span>
+            <a class="ghost" href="https://meal-expense-api-production.mdmarufhasanallhaddy.workers.dev/privacy-policy">Privacy policy</a>
+            <a class="ghost" href="https://meal-expense-api-production.mdmarufhasanallhaddy.workers.dev/support">Support</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
 
   <footer>
